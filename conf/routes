@@ -1,0 +1,15 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+
+POST     /crearEmpresa   					 co.com.ceiba.empresa.comando.infraestructura.controladores.ControladorCrearEmpresa.crearEmpresa
+GET      /consultarCreacionEmpresa 		     co.com.ceiba.empresa.comando.infraestructura.controladores.ControladorCrearEmpresa.consultarEmpresa
+
+GET      /consultarEmpresa 		    		 co.com.ceiba.empresa.consulta.infraestructura.controladores.ControladorListarEmpresa.consultarEmpresa
+GET      /consultarPorIdentificacionEmpresa/:id  co.com.ceiba.empresa.consulta.infraestructura.controladores.ControladorListarEmpresa.consultarPorIdentificacionEmpresa(id)
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
